@@ -1,0 +1,71 @@
+<h1 id = "exists">Your workout table is empty</h1>
+<table class = "table" id = "mainTable" >
+<thead>
+<tr>
+
+	<th>Name</th>
+	<th>Reps</th>
+	<th>Weight</th>
+	<th>Date</th>
+	<th>Lbs</th>
+
+</tr>
+<tbody  id = "theTableB">	
+
+</tbody>
+</thead>
+</table>
+
+
+<div class = "container">
+
+<div class = "row">
+<div class = "col-sm-2">
+</div>
+<div class="col-sm-8 well">
+
+<div id = "input" style= "display: inline">
+<legend>Input</legend>
+<form>
+<fieldset>
+	<p>Name*:<input type = "text" id = "name" required></p>
+	<p>Reps:<input type = "number" id = "reps"></p>
+	<p>Weight: <input type = "number" id = "weight"></p>
+	<p>Date: <input type = "date" id = "date"></p>
+	<p>Units : <select  id = "lbs">
+	<option value = "1">lbs</option>
+	<option value = "0">kgs</option>
+	</select>
+	</p>
+	<input class='btn btn-success' type="submit" id ="sub" value = "Submit">
+	</fieldset>
+	</form>
+</div>
+
+<div id = "edit" style= "display: none">
+<legend>Edit</legend>
+<form>
+<fieldset>
+	<p>Name*:<input type = "text" id = "ename" required></p>
+	<p>Reps:<input type = "number" id = "ereps"></p>
+	<p>Weight: <input type = "number" id = "eweight"></p>
+	<p>Date: <input type = "date" id = "edate"></p>
+	<p>Units : <select  id = "elbs">
+	<option id = "opt1" value = "1">lbs</option>
+	<option id = "opt2" value = "0">kgs</option>
+	</select>
+	</p>
+	<input type = "hidden" id = "eid"> 
+	<input class='btn btn-success' type="submit" id ="update" value = "Update">
+	<button class='btn btn-danger' type="button" id ="cancel">Cancel</button>
+	</fieldset>
+	</form>
+</div>
+
+
+
+<div class = "col-sm-2">
+</div>
+</div>
+</div>
+<script type = "text/javascript" src = "./script.js"></script>
